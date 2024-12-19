@@ -1,4 +1,6 @@
 #include "../../lib/numericCppExamplesLib/discreteFourierTransform.h"
+#include <iostream>
+#include <vector>
 
 int main() {
   CVec<> x({1, 2, 3, 4, 5, 6, 7, 8});
