@@ -1,9 +1,3 @@
-//
-//  main.cpp
-//  RandomNumberGenerators
-//
-//
-
 #include <iostream>
 #include "../../lib/numericCppExamplesLib/devrandom.h"
 #include "../../lib/numericCppExamplesLib/lcg.h"
