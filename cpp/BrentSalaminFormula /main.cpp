@@ -1,12 +1,14 @@
-#include <iomanip>
-#include <iostream>
+#include <gtest/gtest.h>
 #include <numeric>
 #include "../../lib/numericCppExamplesLib/brentSalaminFormula.h"
 
-int main() {
-  auto appr_pi = calc_pi<long double>(15);
-  std::cout << std::setprecision(17);
-  std::cout << M_PI << std::endl;
-  std::cout << appr_pi << std::endl;
-  return 0;
+TEST(BrentSalaminFormulaTest, CalculatePi) {
+  long double expected = M_PI;
+  long double actual = calc_pi<long double>(15);
+  EXPECT_NEAR(expected, actual, 1e-10);
+}
+
+int main(int argc, char** argv) {
+  ::testing::InitGoogleTest(&argc, argv);
+  return RUN_ALL_TESTS();
 }
