@@ -1,3 +1,5 @@
+#include <iostream>
+#include <vector>
 #include "../../lib/numericCppExamplesLib/lagrangeInterpolation.h"
 
 int main() {
