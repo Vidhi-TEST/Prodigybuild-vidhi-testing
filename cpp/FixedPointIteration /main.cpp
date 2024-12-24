@@ -1,9 +1,3 @@
-//
-//  main.cpp
-//  FixedPointIteration
-//
-//
-
 #include <iostream>
 #include "../../lib/numericCppExamplesLib/fixedPointIteration.h"
 
