@@ -1,57 +1,68 @@
 ```markdown
 # Prodigybuild-vidhi-testing
 
-This repository contains various C++ implementations of numerical algorithms. This includes implementations of Automatic Differentiation, BBP Type Formula, Brent Salamin Formula, Discrete Fourier Transform, Fixed Point Iteration, Lagrange Interpolation, and a Random Number Generator. 
+Welcome to *Prodigybuild-vidhi-testing*. This repository is home to various numerical algorithms implemented in C++. The repository includes implementations of Automatic Differentiation, BBP Type Formula, Brent Salamin Formula, Discrete Fourier Transform, Fixed Point Iteration, Lagrange Interpolation, and a Random Number Generator.
 
-## Pre-requisites
+## Prerequisites
 
-1. C++ Compiler: You will need a C++ compiler installed on your machine. Feel free to use either `g++` (Mac/Linux) or `clang` compilers.
+1. **C++ Compiler:** A C++ compiler, such as `g++` or `clang`, is required to compile the C++ files in this repository.
 
-2. For any database requirements, SQLite3 is recommended.
+2. **SQLite3:** For database requirements, the SQLite3 database engine is needed.
 
-## Installation Guide
+## Setup Instructions
+
+Below are the instructions for setting up the prerequisites and getting started with this repository on your local machine.
 
 ### Windows
 
-Install GCC for Windows:
+**GCC Installation:**
 
-1. Go to [MinGW-w64](https://mingw-w64.org/doku.php) and download the installer.
-2. Follow the prompts to install.
-3. Add the path where you installed MinGW to your system path.
+1. Visit the [MinGW-w64](https://mingw-w64.org/doku.php) official website and download the installer.
+2. Follow the prompts to install the MinGW-w64.
+3. Add the path where MinGW is installed to your system path.
 
-SQLite3:
+**SQLite3 Installation:**
 
-1. Download the precompiled binaries [here](https://www.sqlite.org/download.html).
-2. Ensure SQLite is added to your system path.
+1. Visit the official SQLite download page [here](https://www.sqlite.org/download.html) and download the precompiled binaries for SQLite.
+2. Add SQLite to your system path.
 
 ### Mac
 
-Use Homebrew to install GCC and SQLite:
+**GCC & SQLite3 Installation:**
 
-1. `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
-2. `brew install gcc`
-3. `brew install sqlite3`
-
-## Compilation & Execution
-
-To compile your C++ programs, you have to use the C++ compiler (preferably `g++` or `clang`) and the `-o` flag for the output file. For instance, to compile the BBPTypeFormula:
-
-```bash
-g++ ./cpp/BBPTypeFormula/main.cpp -o bbp
+1. Open a terminal and install Homebrew by pasting the following command and hit enter:
 ```
-To execute the compiled program, use:
-
-```bash
-./bbp
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+2. Once Homebrew is installed, install GCC and SQLite3 using the following commands:
+```
+brew install gcc
+brew install sqlite3
 ```
 
-Follow the same steps for all other C++ files in this repository.
+## Building & Running the Project
 
-## CI/CD Integration & Deployment
+**Compilation:**
 
-If you have a CI/CD pipeline, adapt the above steps to your pipeline needs. Most CI/CD tools support environment variables, so remember to set up any database credentials or other sensitive information as environment variables.
+To compile the C++ files from this repository, use the C++ compiler you have installed (`g++` or `clang`) along with the `-o` flag as shown below:
+```
+g++ ./cpp/<PROGRAM_NAME>/main.cpp -o <PROGRAM_NAME>
+```
 
-## Finally
+**Execution:**
 
-Please raise any issues you find with this repository so they can be addressed promptly.
+To execute the compiled file, open a terminal and use the command below:
+```
+./<PROGRAM_NAME>
+```
+
+Repeat the above steps for all other C++ files in the repository.
+
+## CI/CD Integration and Deployment
+
+The steps for building and executing the programs in this repository can be included in your CI/CD pipeline. If using environment variables for sensitive information like database credentials, be sure to set them up in your CI/CD environment.
+
+## Conclusion
+
+If you encounter any problems or bugs using this repository, kindly raise an issue so they can be addressed promptly. Thank you.
 ```
