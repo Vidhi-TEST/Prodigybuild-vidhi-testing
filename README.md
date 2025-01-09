@@ -1,13 +1,13 @@
 ```markdown
 # Prodigybuild-vidhi-testing
 
-This repository contains various C++ implementations of numerical algorithms. This includes implementations of Automatic Differentiation, BBP Type Formula, Brent Salamin Formula, Discrete Fourier Transform, Fixed Point Iteration, Lagrange Interpolation, and a Random Number Generator. 
+This repository contains implementations of various numerical algorithms in C++. The algorithms implemented consist of Automatic Differentiation, BBP Type Formula, Brent Salamin Formula, Discrete Fourier Transform, Fixed Point Iteration, Lagrange Interpolation, and a Random Number Generator. There is also integration with a SQLite database. This repository is a resource for developers aiming to study or implement numerical algorithms provided within.
 
 ## Pre-requisites
 
-1. C++ Compiler: You will need a C++ compiler installed on your machine. Feel free to use either `g++` (Mac/Linux) or `clang` compilers.
+1. C++ Compiler: You will need a C++ compiler installed on your machine.
 
-2. For any database requirements, SQLite3 is recommended.
+2. SQLite3: For any database requirements, SQLite3 is recommended.
 
 ## Installation Guide
 
@@ -19,7 +19,7 @@ Install GCC for Windows:
 2. Follow the prompts to install.
 3. Add the path where you installed MinGW to your system path.
 
-SQLite3:
+Install SQLite3:
 
 1. Download the precompiled binaries [here](https://www.sqlite.org/download.html).
 2. Ensure SQLite is added to your system path.
@@ -34,7 +34,7 @@ Use Homebrew to install GCC and SQLite:
 
 ## Compilation & Execution
 
-To compile your C++ programs, you have to use the C++ compiler (preferably `g++` or `clang`) and the `-o` flag for the output file. For instance, to compile the BBPTypeFormula:
+To compile your C++ programs, you have to use the C++ compiler (`g++` or `clang` recommended) and the `-o` flag for the output file. For example, to compile the BBPTypeFormula:
 
 ```bash
 g++ ./cpp/BBPTypeFormula/main.cpp -o bbp
@@ -45,7 +45,7 @@ To execute the compiled program, use:
 ./bbp
 ```
 
-Follow the same steps for all other C++ files in this repository.
+Repeat same steps for all other C++ files in this repository.
 
 ## CI/CD Integration & Deployment
 
