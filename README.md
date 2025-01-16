@@ -1,57 +1,58 @@
 ```markdown
 # Prodigybuild-vidhi-testing
 
-This repository contains various C++ implementations of numerical algorithms. This includes implementations of Automatic Differentiation, BBP Type Formula, Brent Salamin Formula, Discrete Fourier Transform, Fixed Point Iteration, Lagrange Interpolation, and a Random Number Generator. 
+Welcome to the Prodigybuild-vidhi-testing repository! Here we implement numerous numerical algorithms utilizing C++. Algorithms found within this repository include Automatic Differentiation, BBP Type Formula, Brent Salamin Formula, Discrete Fourier Transform, Fixed Point Iteration, Lagrange Interpolation, and a Random Number Generator. 
 
-## Pre-requisites
+## Prerequisites
 
-1. C++ Compiler: You will need a C++ compiler installed on your machine. Feel free to use either `g++` (Mac/Linux) or `clang` compilers.
+1. C++ Compiler: Ensure you have a C++ compiler in your system. We recommend using either `g++` (Mac/Linux) or `clang` compilers.
 
-2. For any database requirements, SQLite3 is recommended.
+2. SQLite3: For managing any database requirements, we advise using SQLite3.
 
 ## Installation Guide
 
-### Windows
+### Windows Users
 
-Install GCC for Windows:
+To install GCC for windows:
 
-1. Go to [MinGW-w64](https://mingw-w64.org/doku.php) and download the installer.
-2. Follow the prompts to install.
-3. Add the path where you installed MinGW to your system path.
+1. Download the installer from the [MinGW-w64](https://mingw-w64.org/doku.php) webpage.
+2. Follow the provided instructions to install.
+3. Ensure to add the path where you installed MinGW to your system path.
 
-SQLite3:
+To install SQLite3:
 
-1. Download the precompiled binaries [here](https://www.sqlite.org/download.html).
+1. Download the precompiled binaries from this [link](https://www.sqlite.org/download.html).
 2. Ensure SQLite is added to your system path.
 
-### Mac
+### MacOS Users
 
 Use Homebrew to install GCC and SQLite:
 
-1. `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
-2. `brew install gcc`
-3. `brew install sqlite3`
+1. Open Terminal and run `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"` to install Homebrew.
+2. Install GCC by running `brew install gcc` in the Terminal.
+3. Install SQLite3 by running `brew install sqlite3` in the Terminal.
 
 ## Compilation & Execution
 
-To compile your C++ programs, you have to use the C++ compiler (preferably `g++` or `clang`) and the `-o` flag for the output file. For instance, to compile the BBPTypeFormula:
+To compile your C++ programs, utilize the C++ compiler (`g++` or `clang`) and the `-o` flag.
+For example, to compile BBPTypeFormula:
 
 ```bash
 g++ ./cpp/BBPTypeFormula/main.cpp -o bbp
 ```
-To execute the compiled program, use:
+To execute the compiled program:
 
 ```bash
 ./bbp
 ```
 
-Follow the same steps for all other C++ files in this repository.
+Follow the similar instruction for all other C++ files in this repository.
 
 ## CI/CD Integration & Deployment
 
-If you have a CI/CD pipeline, adapt the above steps to your pipeline needs. Most CI/CD tools support environment variables, so remember to set up any database credentials or other sensitive information as environment variables.
+In case you have a CI/CD pipeline, customize these steps according to your pipeline's requirements. Most CI/CD tools support environment variables. Therefore, remember to set up any database credentials or other sensitive data as environment variables.
 
-## Finally
+## Further Assistance
 
-Please raise any issues you find with this repository so they can be addressed promptly.
+Feel free to report any bugs you encounter during implementation, and we will address them promptly.
 ```
