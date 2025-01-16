@@ -5,41 +5,49 @@ This repository contains various C++ implementations of numerical algorithms. Th
 
 ## Pre-requisites
 
-1. C++ Compiler: You will need a C++ compiler installed on your machine. Feel free to use either `g++` (Mac/Linux) or `clang` compilers.
+1. C++ 17 Compiler: You will need a C++ compiler installed on your machine. This project requires C++17 for compiling the project files. For both Mac and Windows, you can install GCC or the LLVM Clang compiler.
 
-2. For any database requirements, SQLite3 is recommended.
+2. SQLite3: For any database requirements, SQLite3 is recommended.
+
 
 ## Installation Guide
 
 ### Windows
 
-Install GCC for Windows:
+**Installing GCC for Windows:**
 
 1. Go to [MinGW-w64](https://mingw-w64.org/doku.php) and download the installer.
 2. Follow the prompts to install.
 3. Add the path where you installed MinGW to your system path.
 
-SQLite3:
+**Installing SQLite3:**
 
 1. Download the precompiled binaries [here](https://www.sqlite.org/download.html).
 2. Ensure SQLite is added to your system path.
 
 ### Mac
 
-Use Homebrew to install GCC and SQLite:
+**Installing GCC and SQLite with Homebrew:**
 
-1. `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
-2. `brew install gcc`
-3. `brew install sqlite3`
+1. First, install Homebrew using the following command:
+   
+   ```/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"```
+   
+2. Then install GCC and SQLite3:
+
+   ```brew install gcc```
+   
+   ```brew install sqlite3```
 
 ## Compilation & Execution
 
-To compile your C++ programs, you have to use the C++ compiler (preferably `g++` or `clang`) and the `-o` flag for the output file. For instance, to compile the BBPTypeFormula:
+To compile your C++ programs, you will have to use the C++ compiler (GCC or Clang) with the `-std=c++17` flag. The `-o` flag is used to specify the output file. For instance, to compile the BBPTypeFormula:
 
 ```bash
-g++ ./cpp/BBPTypeFormula/main.cpp -o bbp
+g++ -std=c++17 ./cpp/BBPTypeFormula/main.cpp -o bbp
 ```
-To execute the compiled program, use:
+
+To execute the compiled program, you can use:
 
 ```bash
 ./bbp
@@ -47,11 +55,11 @@ To execute the compiled program, use:
 
 Follow the same steps for all other C++ files in this repository.
 
-## CI/CD Integration & Deployment
+## Environment Setup & CI/CD Integration
 
-If you have a CI/CD pipeline, adapt the above steps to your pipeline needs. Most CI/CD tools support environment variables, so remember to set up any database credentials or other sensitive information as environment variables.
+Adapt the above steps to your needs if you have a CI/CD pipeline. Most CI/CD tools support environment variables, so setup any database credentials or other sensitive information as environment variables.
 
 ## Finally
 
-Please raise any issues you find with this repository so they can be addressed promptly.
+Please raise any issues you find with this repository, they will be addressed promptly.
 ```
