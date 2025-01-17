@@ -1,4 +1,3 @@
-```cpp
 #include <iostream>
 #include <vector>
 #include <string>
@@ -125,4 +124,3 @@ int main() {
     playTicTacToe();
     return 0;
 }
-```
